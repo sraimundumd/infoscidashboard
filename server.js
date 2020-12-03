@@ -27,7 +27,7 @@ app.route('/api')
   })
   .post(async(req, res) => {
     console.log('POST request detected');
-    const data = await fetch('https://raw.githubusercontent.com/umdio/umdio-data/master/courses/data/202008.json');
+    const data = await fetch('https://api.umd.io/v1/courses');
     const json = await data.json();
     console.log('fetch request data', json);
     res.send(json);
