@@ -4,6 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoScience Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <style>
+        #mapid { height: 450px; }
+    </style>
 </head>
 <body>
     <nav class="navbar has-shadow is-primary">
@@ -41,24 +50,28 @@
     </div>
 
     <!-- This is the search for the semester. Data only has from 2017-2020 so only 3 options available-->
-    <div class="select">
-        <div class="select is-danger">
-            <div class="select is-large">
-        <select>
-          <option>Semester</option>
-          <option>2020</option>
-          <option>2019</option>
-          <option>2018</option>
-          <option>2017</option>
-        </select>
+    <div class="field">
+        <div class="control">
+          <div class="select is-large">
+            <div class="select is-danger">
+            <select>
+              <option>Semester</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+            </select>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
 
 <!-- This is the search for the amount of credits that INST offers-->
-    <div class="select">
+<div class="field">
+    <div class="control">
+      <div class="select is-large">
         <div class="select is-info">
-            <div class="select is-large">
         <select>
           <option>Credits</option>
           <option>4</option>
@@ -68,8 +81,10 @@
         </select>
       </div>
     </div>
-    </div>
+  </div>
+</div>
 
+<div id="mapid"></div>
 <script src="script.js"></script>
 </body>
 </html>
