@@ -6,9 +6,9 @@ burgerIcon.addEventListener('click', () => {
     navbarMenu.classList.toggle('is-active')
 });
 
-var mymap = L.map('mapid').setView([38.9859436, -76.9385856 ], 13);
+var mymap = L.map('mapid').setView([38.98698, -76.94265], 13);
 
-var circle = L.circle([38.989697, -76.937759], {
+var circle = L.circle([38.98698, -76.94265], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
