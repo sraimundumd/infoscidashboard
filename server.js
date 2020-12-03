@@ -27,7 +27,7 @@ app.route('/api')
   })
   .post(async(req, res) => {
     console.log('POST request detected');
-    const data = await fetch('https://api.umd.io/v1/courses');
+    const data = await fetch('https://api.umd.io/v1/courses?semester=202008');
     const json = await data.json();
     console.log('fetch request data', json);
     res.send(json);
