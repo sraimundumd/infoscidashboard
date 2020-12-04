@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('FinalProject'));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -26,10 +26,10 @@ app.route('/api')
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post(async(req, res) => {
-    console.log('POST request detected');
+    console.log('POST request detected', req.body);
     const data = await fetch('https://api.umd.io/v1/courses?semester=202008');
     const json = await data.json();
-    console.log('fetch request data', json);
+    //console.log('fetch request data', json);
     res.send(json);
   });
 

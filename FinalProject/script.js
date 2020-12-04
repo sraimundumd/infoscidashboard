@@ -23,3 +23,18 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'pk.eyJ1Ijoic3JhaW0iLCJhIjoiY2tpOTZhYWZxMDR4azJ1bXh0djR2c2drayJ9.dSGEAnz8IhKkr1QskJsmDg'
 }).addTo(mymap);
+
+const form=document.querySelector(".courses_form")
+form.addEventListener("submit", async (event) =>{ 
+    event.preventDefault()
+const form = $(event.target).serializeArray(); // here we're using jQuery to serialize the form
+console.log(event.target)
+console.log("Submitted Form", form)
+const data = await fetch('/api', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(form)
+  })
+})

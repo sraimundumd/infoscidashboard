@@ -10,6 +10,11 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
     <style>
         #mapid { height: 450px; }
     </style>
@@ -42,7 +47,7 @@
 <figure class="image is-128x128">
     <img src="info.jpg">
   </figure>
-
+  <form method="POST" action="/api" class="courses_form">
   <!-- This is the search for the classes, the main search input area-->
   <div class="field">
     <div class="control">
@@ -54,7 +59,7 @@
         <div class="control">
           <div class="select is-large">
             <div class="select is-danger">
-            <select>
+            <select name="semester">
               <option>Semester</option>
               <option>2020</option>
               <option>2019</option>
@@ -67,12 +72,13 @@
       </div>
     </div>
 
+
 <!-- This is the search for the amount of credits that INST offers-->
 <div class="field">
     <div class="control">
       <div class="select is-large">
         <div class="select is-info">
-        <select>
+        <select name="credits">
           <option>Credits</option>
           <option>4</option>
           <option>3</option>
@@ -83,7 +89,8 @@
     </div>
   </div>
 </div>
-
+<button type="submit" id="submit">Submit</button>
+</form>
 <!-- This is to call the leaflet map -->
 <div id="mapid"></div>
 <script src="script.js"></script>
