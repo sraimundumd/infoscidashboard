@@ -41,24 +41,38 @@
             </div>
         </div>
     </nav>
-    <img src = "Athena-book2.jpg" alt = "Athena wants to look for her classes" style = "max-height: 250px" class="BOOF">
-    <!-- CENTER ATHENA IN CSS-->
+<!-- This is Athena-->
+    <div class="container">
+      <div class="columns is-centered">
+      <img src = "Athena-book2.jpg" alt = "Athena wants to look for her classes" style = "max-height: 250px" class="BOOF">
+      </div>  
+    </div>    
+<!-- These are the titles-->
+    <p class="mt-4"></p>
     <p class="title is-1 has-text-centered">Information Science Dashboard</p>
 <p class="subtitle is-4 has-text-centered">Welcome to the Information Science Dashboard. Please select your method of search below, to find your INST courses</p>
 
 <!-- This is the image for the information Science Department-->
-<figure class="image is-128x128">
+<div class="container">
+  <div class="columns is-centered">
+    <figure class="image is-128x128">
     <img src="info.jpg">
-  </figure>
+    </figure>
+  </div>
   <form method="POST" action="/api" class="courses_form">
   <!-- This is the search for the classes, the main search input area-->
-  <div class="field">
-    <div class="control">
-      <input class="input is-primary" type="text" placeholder="Search for your INST classes">
-    </div>
-
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <p class="mt-1"></p>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Search for your INST classes">
+          </div>
+        </div>
+      </div>
+    
     <!-- This is the search for the semester. Data only has from 2017-2020 so only 3 options available-->
-    <div class="field">
+    <div class="columns is-centered">
+      <div class="field">
         <div class="control">
           <div class="select is-large">
             <div class="select is-danger">
@@ -68,8 +82,8 @@
               <option>2019</option>
               <option>2018</option>
               <option>2017</option>
-              <option>2016</option>
             </select>
+            </div>
           </div>
         </div>
       </div>
@@ -77,8 +91,10 @@
 
 
 <!-- This is the search for the amount of credits that INST offers-->
+<div class="columns is-centered">
 <div class="field">
     <div class="control">
+      <p class="mt-2"></p>
       <div class="select is-large">
         <div class="select is-info">
         <select name="credits">
@@ -88,11 +104,19 @@
           <option>2</option>
           <option>1</option>
         </select>
+        </div>
       </div>
     </div>
-  </div>
 </div>
+</div>
+<!-- This is the submit button-->
+<div class="columns is-centered">
+<div class="control">
+<p class="mt-2"></p>
 <button type="submit" id="submit">Submit</button>
+</div>
+</div>
+</div>
 </form>
 <!-- This is to call the leaflet map -->
 <div id="mapid"></div>
