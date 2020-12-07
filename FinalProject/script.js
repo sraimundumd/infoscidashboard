@@ -1,7 +1,7 @@
 //This will be for the mobile menu
 const burgerIcon = document.querySelector("#burger");
 const navbarMenu = document.querySelector("#mylist");
-const endpoint = 'https://api.umd.io/v0/courses';
+const endpoint = 'https://api.umd.io/v0/courses/list';
 
 const classes = [];
 
