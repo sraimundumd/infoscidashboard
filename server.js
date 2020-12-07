@@ -29,7 +29,7 @@ app.route('/api')
     console.log('POST request detected', req.body);
     const data = await fetch('https://api.umd.io/v0/courses/list');
     const json = await data.json();
-    //console.log('fetch request data', json);
+    console.log('fetch request data', json);
     res.send(json);
   });
 
