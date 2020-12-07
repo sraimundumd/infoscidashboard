@@ -59,65 +59,59 @@
     <img src="info.jpg">
     </figure>
   </div>
+<!-- This is the start of the form-->
   <form method="POST" action="/api" class="courses_form">
-  <!-- This is the search for the classes, the main search input area-->
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <p class="mt-1"></p>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Search for your INST classes">
-          </div>
-        </div>
-      </div>
-    
-    <!-- This is the search for the semester. Data only has from 2017-2020 so only 3 options available-->
     <div class="columns is-centered">
-      <div class="field">
-        <div class="control">
-          <div class="select is-large">
-            <div class="select is-danger">
-            <select name="semester">
-              <option>Semester</option>
-              <option>2020</option>
-              <option>2019</option>
-              <option>2018</option>
-              <option>2017</option>
-            </select>
-            </div>
+<!-- This is the search for the classes, the main search input area-->
+         <div class="field">
+            <p class="control has-icons-left">
+              <input class="input" input style="width:20em;" type="text" placeholder="Search for your INST classes">
+              <span class="icon is-small is-left">
+              <i class="fas fa-search"></i>
+              </span>
+            </p>
+         </div>
+<!-- This is the search for the semester. Data only has from 2017-2020 so only 3 options available-->
+         <div class="field">
+            <p class="control">
+              <p class="ml-3">
+               <span class="select">
+                  <select name="semester">
+                    <option>Semester</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                  </select>
+               </span>
+              </p>
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-
-
 <!-- This is the search for the amount of credits that INST offers-->
-<div class="columns is-centered">
-<div class="field">
-    <div class="control">
-      <p class="mt-2"></p>
-      <div class="select is-large">
-        <div class="select is-info">
-        <select name="credits">
-          <option>Credits</option>
-          <option>4</option>
-          <option>3</option>
-          <option>2</option>
-          <option>1</option>
-        </select>
-        </div>
+         <div class="field">
+            <p class="control">
+              <p class="ml-3">
+               <span class="select">
+                <select name="credits">
+                  <option>Credits</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                  </select>
+               </span>
+              </p>
+            </p>
+         </div>
       </div>
-    </div>
-</div>
-</div>
 <!-- This is the submit button-->
+<p class="mt-4">
 <div class="columns is-centered">
-<div class="control">
-<p class="mt-2"></p>
-<button type="submit" id="submit">Submit</button>
+<button type="submit" class="button is-primary" id="submit">Submit</button>
 </div>
-</div>
-</div>
+</p>
 </form>
+</div>
 <!-- This is to call the leaflet map -->
 <div id="mapid"></div>
 <script src="script.js"></script>
