@@ -65,7 +65,7 @@
 <!-- This is the search for the classes, the main search input area-->
          <div class="field">
             <p class="control has-icons-left">
-              <input class="input" input style="width:20em;" type="text" placeholder="Search for your INST classes">
+              <input class="input" name="course_id" id="dept" input style="width:20em;" type="text" placeholder="Search for your INST classes">
               <span class="icon is-small is-left">
               <i class="fas fa-search"></i>
               </span>
@@ -77,11 +77,11 @@
               <p class="ml-3">
                <span class="select">
                   <select name="semester" id="sm">
-                    <option>Semester</option>
-                    <option>2020</option>
-                    <option>2019</option>
-                    <option>2018</option>
-                    <option>2017</option>
+                    <option value="">Semester</option>
+                    <option value="202008">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
                   </select>
                </span>
               </p>
@@ -93,11 +93,11 @@
               <p class="ml-3">
                <span class="select">
                 <select name="credits" id="cd">
-                  <option>Credits</option>
-                  <option>4</option>
-                  <option>3</option>
-                  <option>2</option>
-                  <option>1</option>
+                  <option value="">Credits</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
                   </select>
                </span>
               </p>
@@ -111,6 +111,12 @@
 </div>
 </p>
 </form>
+</div>
+<!--The search results should return a list-->
+<div class="response">
+  <ul class="info">
+
+  </ul>
 </div>
 <!-- This is to call the leaflet map -->
 <div id="mapid"></div>
