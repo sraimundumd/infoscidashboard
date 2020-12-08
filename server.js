@@ -4,7 +4,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
-
+import axios from 'axios';
 dotenv.config();
 
 const app = express();
@@ -26,11 +26,18 @@ app.route('/api')
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post(async(req, res) => {
-    console.log('POST request detected', req.body);
-    const data = await fetch('https://api.umd.io/v0/courses/list');
-    const json = await data.json();
-    console.log('fetch request data', json);
-    res.send(json);
+    console.log(req.body);
+    const query_param = {
+      dept_id:"INST"
+    };
+    if (req.body) req.body.forEach(q => {
+      if(q.value) query_param[q.name] = q.value
+    });
+    console.log(query_param);
+    const data = await axios.get('https://api.umd.io/v0/courses',{
+      params:query_param
+    });
+    res.send(data.data);
   });
 
 app.listen(port, () => {
