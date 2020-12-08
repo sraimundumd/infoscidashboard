@@ -28,7 +28,8 @@ app.route('/api')
   .post(async(req, res) => {
     console.log(req.body);
     const query_param = {
-      dept_id:"INST"
+      dept_id:"INST",
+      semester:""
     };
     if (req.body) req.body.forEach(q => {
       if(q.value) query_param[q.name] = q.value
