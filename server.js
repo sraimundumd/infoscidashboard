@@ -29,7 +29,15 @@ app.route('/api')
     console.log(req.body);
     const query_param = {
       dept_id:"INST",
-      semester:""
+      semester:"202101",
+      semester:"202008",
+      semester:"202001",
+      semester:"201908",
+      semester:"201901",
+      semester:"201808",
+      semester:"201801",
+      semester:"202101"
+
     };
     if (req.body) req.body.forEach(q => {
       if(q.value) query_param[q.name] = q.value
