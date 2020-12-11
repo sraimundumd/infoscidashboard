@@ -6,10 +6,10 @@ Final project for INST 377 regarding a INST Dashboard
 * Target browsers: IOS
 * Developer Manual:
 How to install our application and all dependencies -
-First step would be to clone the repo from our main branch infoscidashboard once cloned open the repo in any code or text editer perfed Visual studuo code. Once opened you would want to tinstall an extension to your editor called llive server. This will allow you to experice live ommits and open the app up on a local host domain on your device.
+First step would be to clone the repo from our main branch infoscidashboard once cloned open the repo in any code or text editor we prefer Visual studio code. Once opened you would want to install an extension to your editor called live server. This will allow you to experience live commits and open the app up on a local host domain on your device.
 How to run our application on a server -
-Running our application is simple right click within out main index.html file and you should see th eplugin we installed ealrier called live server once you click that your defualt broswer should open up a localhost//:9000 or somethign ismalir allwoing 
-How to run any tests you have written for your softwareyou to use the applciation.
+Running our application is simple right click within our main index.html file and you should see the plugin we installed earlier called live server once you click that your default browser should open up a localhost//:9000 or something similar allowing 
+How to run any tests you have written for your software you to use the application.
 The API for your server application - 
     GET- CONNECTS TO THE API AND OUR PREVIOUS LAB TO USE THE CLASS NAME 'NAME' TO EVALUTE THE REQUEST BEING ASKED
     POST- WILL RETURN INFORMATION FROM THE ISCHOOL FROM THE FOLLOWING SEMESTERS
@@ -22,6 +22,6 @@ The API for your server application -
       semester:"201808",
       semester:"201801",
       semester:"202101"
-A clear set of expectations around known bugs and a road-map for future development.
+A clear set of expectations around known bugs and a roadmap for future development.
 Bugs - None to report
 Future development plans - Add coming semesters 
