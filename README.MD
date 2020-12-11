@@ -4,7 +4,6 @@ Final project for INST 377 regarding a INST Dashboard
 * Description: An application for Information Science students to easily search for INST courses and save them the hassle of navigating through Testudo - Schedule of classes.
 * Heroku link: `https://infoscidashboard.herokuapp.com`
 * Target browsers: IOS
-* User Manual link:
 * Developer Manual:
 How to install our application and all dependencies -
 First step would be to clone the repo from our main branch infoscidashboard once cloned open the repo in any code or text editer perfed Visual studuo code. Once opened you would want to tinstall an extension to your editor called llive server. This will allow you to experice live ommits and open the app up on a local host domain on your device.
