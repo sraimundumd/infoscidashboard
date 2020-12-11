@@ -2,7 +2,6 @@
 const burgerIcon = document.querySelector("#burger");
 const navbarMenu = document.querySelector("#mylist");
 const endpoint = 'https://api.umd.io/v0/courses/list';
-
 const classes = [];
 
 fetch(endpoint)
@@ -60,6 +59,6 @@ const ul = document.querySelector("ul.info")
 ul.innerHTML = ""
 const html = data.map(course => `<li><h2>${course.course_id}</h2>
 <h4>credits: ${course.credits}</h4>
-<p>${course.description ? course.description : ""}</p> </li>`).join("");
+<p>${course.description ? course.description : "No Description Provided"}</p><br><br> </li>`).join("");
 ul.insertAdjacentHTML("afterbegin",html)
 }
