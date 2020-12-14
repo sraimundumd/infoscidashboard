@@ -23,12 +23,16 @@
     ></script>
     <style>
         #mapid { height: 450px; }
+        /* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1280px) {
+/* Styles */
+}
     </style>
 </head>
 
 
 <body>
-    <nav class="navbar has-shadow is-primary">
+    <nav class="navbar has-background-grey-darker">
         <div class="navbar-brand">
             <a href = "index.html"class="navbar-item">
                 <img src="white.png" alt="team logo" style="max-height: 150px" class="py-2 px-2">
@@ -42,13 +46,14 @@
 
         <div class="navbar-menu" id="mylist">
             <div class="navbar-end">
-                <a class="navbar-item">My List</a>
-                <a class="navbar-item">Watchlist</a>
-                <a href="floof.html" class="navbar-item">Stressed Students Click Here</a>
+                <a class="navbar-item has-text-warning">My List</a>
+                <a class="navbar-item has-text-warning">Watchlist</a>
+                <a href="floof.html" class="navbar-item has-text-warning">Stressed Students Click Here</a>
             </div>
         </div>
     </nav>
 <!-- This is Athena-->
+<p class="mt-4"></p>
     <div class="container">
       <div class="columns is-centered">
       <img src = "Athena-book2.jpg" alt = "Athena wants to look for her classes" style = "max-height: 250px" class="BOOF">
@@ -117,21 +122,22 @@
 <!-- This is the submit button-->
 <p class="mt-4">
 <div class="columns is-centered">
-<button type="submit" class="button is-primary is-focused" id="submit">Submit</button>
+<button type="submit" class="button is-warning is-focused" id="submit">Submit</button>
 </div>
 </p>
 </form>
 </div>
 <!--The search results should return a list-->
-<p class="my-4"></p> <!--SPACE HELPERS-->
+<br>
+<p class="mt-4"></p> <!--SPACE HELPERS-->
 <div class="columns is-centered">
 <div class="column is-half">
  <div class="is-align-content-center"> <!--align-content: center-->
    <div class="is-family-sans-serif"><!--Sets font family to $family-sans-serif-->
-     <div class="has-text-black"><!--Dark text -->
-       <div class="container has-background-primary-light">
+     <div class="has-text-warning"><!--Gold text -->
+       <div class="container has-background-danger">
  <div class="content">
- <ul class="info">
+ <ul class="info" info style = "list-style-type: none;">
  </ul>
 </div>
 </div>
