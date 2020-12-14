@@ -29,7 +29,8 @@ Once that is installed sucessfully you will open up a new terminal window and st
       semester:"202101"
 
 ###### Bugs 
-UMD.IO API retrieval of information will return a 404 error "No classes are available for this semester". This happens towards the end of the semester when classes are being uploaded into the API. Since the API only pulls current class information you may experience this using the API towards the ending of a semester. 
+* UMD.IO API retrieval of information will return a 404 error "No classes are available for this semester". This happens towards the end of the semester when classes are being uploaded into the API. Since the API only pulls current class information you may experience this using the API towards the ending of a semester. 
+* Use of Mozilla Firefox to use Localhost3000 may cause memory issues, in which the application may not run. We reconmend using Google Chrome 
 ###### Future development plans: 
 * Work on formatting the output of classes
 * Attempt to retrieve more data from the API
