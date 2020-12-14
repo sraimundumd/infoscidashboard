@@ -57,8 +57,8 @@ form.addEventListener('submit', async (event) => {
 const displayData = data => { 
 const ul = document.querySelector("ul.info")
 ul.innerHTML = ""
-const html = data.map(course => `<li><h2>${course.course_id}</h2>
+const html = data.map(course => `<li><br><h2>${course.course_id}</h2>
 <h4>credits: ${course.credits}</h4>
-<p>${course.description ? course.description : "No Description Provided"}</p><br></li>`).join("");
+<p>${course.description ? course.description : "No Description Provided"}</p></li>`).join("");
 ul.insertAdjacentHTML("afterbegin",html)
 }
