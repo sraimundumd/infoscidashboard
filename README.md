@@ -3,14 +3,14 @@ Final project for INST 377 regarding a INST Dashboard
 
 * Description: An application for Information Science students to easily search for INST courses and save them the hassle of navigating through Testudo - Schedule of classes.
 * Heroku link: https://infoscidashboard.herokuapp.com
-* Target browsers: Desktop, iOS iPhone 8 and above
+* Target browsers: Desktop, IOS devices as well (Mobile Screen not organized)
 
 
 ### Developer Manual
 ##### How to install our application and all dependencies -
-First step would be to clone the repo from our main branch infoscidashboard once cloned open the repo in any code or text editor we prefer Visual studio code. Once opened you would want to install an extension to your editor called live server. This will allow you to experience live commits and open the app up on a local host domain on your device.
+First step would be to clone the repo from our main branch infoscidashboard. Once cloned, open the repo in any code or text editor, we prefer Visual studio code. Once opened you want to install npm by runing "npm install". This will instal node js that will be used to run our server.
 ##### How to run our application on a server -
-Running our application is simple. Right click within our main index.html file, and you should see the plugin we installed earlier called live server. Once you click that your default browser should open up a localhost//:5050 or something similar allowing 
+Once that is installed sucessfully you will open up a new terminal window and start the server by running the command "npm start". This will run our server on port 3000 and you will be able to open the app in your browser by going to http://localhost:3000/ This will allow you to experience live commits and open the app up on a local host domain on your device.
 ##### How to run any tests you have written for your software you to use the application.
 ###### The API for your server application - 
     GET- CONNECTS TO THE API AND OUR PREVIOUS LAB TO USE THE CLASS NAME 'NAME' TO EVALUTE THE REQUEST BEING ASKED
