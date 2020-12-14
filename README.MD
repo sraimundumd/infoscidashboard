@@ -16,6 +16,8 @@ Once that is installed sucessfully you will open up a new terminal window and st
     GET- UMD.IO is a GETFUL API. GET request is needed to retrieve information regarding courses
     Endpoint- https://api.umd.io/v0/courses , UMD.IO
     POST- will return information only from the ISchool (dept_id="INST") from the following semesters 
+
+
     dept_id:"INST",
       semester:"202101",
       semester:"202008",
@@ -25,7 +27,7 @@ Once that is installed sucessfully you will open up a new terminal window and st
       semester:"201808",
       semester:"201801",
       semester:"202101"
-##### A clear set of expectations around known bugs and a roadmap for future development.
+
 ###### Bugs 
 UMD.IO API retrieval of information will return a 404 error "No classes are available for this semester". This happens towards the end of the semester when classes are being uploaded into the API. Since the API only pulls current class information you may experience this using the API towards the ending of a semester. 
 ###### Future development plans: 
