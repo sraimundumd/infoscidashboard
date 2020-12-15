@@ -15,7 +15,7 @@ Steven Raimundo, Ryan Mullen, Lealena Befikadu, Malik Downey, Raymond Argueta
 ##### Chosen strategies and solutions for the problem
     We chose to address this problem by asking ourselves what we, as information science students, would have found helpful to make our schedules prior to this course. We decided on making an application that will search for only Information Science classes throughout semesters and provide information on those courses.
 ##### Technical system decision rationale
-
+We decided to use a system that would retrieve data based of a users query. We wanted users to be able to search our dashboard with 3 options (semester, class ID, credits) and then retrieve information based off their query. This was done in our server using the HTTP client Axios that allowed us to have a POST request and then GET requests with the information that needed to be retrieved. Query paramaters were created and retrieved only INST courses throughout the last 3 years. 
 ##### How/if your final system helps to address the problem
     Our final system well impacts our original problem by actually making it easier to see only InfoSci classes previous models the university has put in place can only section off core classes but not major classes alike. What we have been able to accomplish is singling out infosci classes to allow for better schedule planning. 
 ##### Challenges faced and impact on final design
